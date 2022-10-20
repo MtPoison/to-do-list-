@@ -1,60 +1,67 @@
 @import url("https://fonts.googleapis.com/css?family=Arimo:400,700|Roboto+Slab:400,700");
 
-:root {
+:root 
+{
   font-size: calc(0.5vw + 1vh);
 }
 
-
-
-* {
+* 
+{
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-body {
+body 
+{
   min-width: 420px;
-  background-color: #272835;
+  background-color: #3a3c4b;
 }
 
 h1
 {
-    text-align: center;
-    color: #fa7070;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: underline;
-    text-decoration-color: #6fabd3;
-    font-style: italic;
+  text-align: center;
+  color: #fa7070;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: underline;
+  text-decoration-color: #6fabd3;
+  font-style: italic;
 }
 
-h4 {
+h4 
+{
   font-family: "Arimo", sans-serif;
   line-height: 1.3;
   font-style: italic;
 }
 
-header h1 {
+header h1 
+{
   font-size: 2.4rem;
   margin: 4rem auto;
 }
 
-span {
+span 
+{
   font-size: 3rem;
 }
 
-p {
+p 
+{
   font-family: "Roboto Slab", serif;
 }
 
 a,
 a:link,
 a:active,
-a:visited {
+a:visited 
+{
   color: #0066aa;
   text-decoration: none;
   border-bottom: #000013 0.16rem solid;
 }
 
-a:hover {
+a:hover 
+{
   color: #7070b9;
   border-bottom: #719ebd 0.16rem solid;
 }
@@ -66,11 +73,12 @@ footer {
   text-align: center;
 }
 
-.add-task-container {
+.add-task-container 
+{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 30rem;
+  width: 40rem;
   height: 5.3rem;
   margin: auto;
   background: #a8a8a8;
@@ -79,7 +87,8 @@ footer {
   padding: 0.4rem;
 }
 
-.select{
+.select
+{
   margin: auto;
   height: 2.5rem;
   background-color: rgb(73, 68, 68);
@@ -89,13 +98,13 @@ footer {
   border-width: 2px;
 }
 
-.main-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.main-container 
+{
   display: flex;
 }
 
-.columns {
+.columns 
+{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,8 +113,10 @@ footer {
   align-items: flex-start;
   margin: 1.6rem auto;
 }
+
 /* column style */
-.column {
+.column 
+{
   width: 8.4rem;
   margin: 30px 30px;
   background: #e2dddd;
@@ -114,58 +125,70 @@ footer {
 }
 
 /* column header style */
-.column-header {
+.column-header 
+{
   padding: 0.1rem;
   border-bottom: #757571 4px solid;
 }
 
-.column-header h4 { 
+.column-header h4 
+{ 
   text-align: center;
   color:#000000;
 }
 
 /* header background of "to do" column */
-.to-do-column .column-header { 
+.to-do-column .column-header 
+{ 
   background: #aa4903;
 }
 
 /* header background of "doing" column */
-.doing-column .column-header { 
+.doing-column .column-header 
+{ 
   background: #a19f04;
 }
 
 /* header background of "done" column */
-.done-column .column-header { 
+.done-column .column-header 
+{ 
   background: #078503;
 }
 
 /* header background of "trash" column */
-.trash-column .column-header { 
+.trash-column .column-header 
+{ 
   background: #9c0606;
 }
 
 /* size of colums (without item) */
-.task-list { 
+.task-list 
+{ 
   min-height: 3rem;
+  
 }
 
-ul {
+ul 
+{
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-li {
+li 
+{
   list-style-type: none;
 }
 
-.column-button {
+.column-button 
+{
   text-align: center;
   padding: 0.1rem;
 }
 
 /* button border/color text */
-.button { 
+.button 
+{ 
   font-family: "Arimo", sans-serif;
   font-weight: 700;
   border: #770577 3px solid;
@@ -177,16 +200,19 @@ li {
 }
 
 /* delete button */
-.delete-button {
+.delete-button 
+{
   background-color: #960b0b;
   margin: 0.1rem auto 0.6rem auto;
 }
 
-.delete-button:hover {
+.delete-button:hover 
+{
   background-color: #d30707;
 }
 /* button add new task */
-.add-button { 
+.add-button 
+{ 
   background-color: #33b5e9;
   padding: 0 1rem;
   height: 2.8rem;
@@ -194,30 +220,23 @@ li {
   margin-top: 0.6rem;
 }
 
-.add-button:hover {
+.add-button:hover 
+{
   background-color: #0952a5;
 }
 
 /* task in columns */
-.task {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    vertical-align: middle;
-    list-style-type: none;
+.task 
+{
     background: rgb(153, 147, 147);
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
     margin: 0.4rem;
-    height: 4rem;
+    height: auto;
     border: #000013 0.15rem solid;
     border-radius: 0.2rem;
     cursor: move;
-    text-align: center;
-    vertical-align: middle;
+    word-wrap: break-word;
+    resize: none;
+    width: auto;
 }
 
 /* box "new task..." */
@@ -234,36 +253,7 @@ li {
     margin: auto 0.8rem auto 0.1rem;
 }
 
-.task p {
+.task p 
+{
   margin: auto;
 }
-
-/* Dragula CSS Release 3.2.0 from: https://github.com/bevacqua/dragula */
-
-.gu-mirror {
-  position: fixed !important;
-  margin: 0 !important;
-  z-index: 9999 !important;
-  opacity: 0.8;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  filter: alpha(opacity=80);
-}
-
-.gu-hide {
-  display: none !important;
-}
-
-.gu-unselectable {
-  -webkit-user-select: none !important;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
-  user-select: all !important;
-}
-
-.gu-transit {
-  opacity: 0.2;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-  filter: alpha(opacity=20);
-}
-
-
